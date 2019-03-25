@@ -50,5 +50,11 @@ public class DatabaseAdminTest {
         assertEquals("Duncan", databaseAdmin.getName());
     }
 
+    @Test
+    public void cannotAddNegativeSalary(){
+        databaseAdmin.raiseSalary(-20);
+        assertEquals(20000, databaseAdmin.raiseSalary(-20), 0.01);
+    }
+
 }
 

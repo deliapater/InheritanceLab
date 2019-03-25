@@ -49,5 +49,11 @@ public class DeveloperTest {
         assertEquals("Cheche", developer.getName());
     }
 
+    @Test
+    public void cannotAddNegativeSalary(){
+        developer.raiseSalary(-20);
+        assertEquals(20000, developer.raiseSalary(-20), 0.01);
+    }
+
 }
 
