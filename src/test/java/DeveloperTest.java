@@ -32,11 +32,11 @@ public class DeveloperTest {
     }
 
 
-//    @Test
-//    public void canRaiseSalary(){
-//        databaseAdmin.raiseSalary(20.50);
-//        assertEquals(20020.5, databaseAdmin.getNewSalary(), 0.01);
-//    }
+    @Test
+    public void canRaiseSalary(){
+        developer.raiseSalary(20.5);
+        assertEquals(20040.0, developer.raiseSalary(20.5), 0.01);
+    }
 
     @Test
     public void hasBonus(){

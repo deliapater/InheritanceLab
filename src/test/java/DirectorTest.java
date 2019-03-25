@@ -35,11 +35,11 @@ public class DirectorTest {
         assertEquals("HR", director.getDeptName());
     }
 
-//    @Test
-//    public void canRaiseSalary(){
-//        director.raiseSalary(20.50);
-//        assertEquals(20020.5, director.getNewSalary(), 0.01);
-//    }
+    @Test
+    public void canRaiseSalary(){
+        director.raiseSalary(20.5);
+        assertEquals(30040.0, director.raiseSalary(20.5), 0.01);
+    }
 
     @Test
     public void hasBonus(){
