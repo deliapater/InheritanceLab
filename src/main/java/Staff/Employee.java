@@ -26,17 +26,10 @@ public abstract class Employee {
 
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null)
+           this.name = name;
     }
 
-    public void setNINo(String NINo) {
-        this.NINo = NINo;
-    }
-
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
 
     public double raiseSalary(double raise) {
       return this.salary += raise;
@@ -45,7 +38,6 @@ public abstract class Employee {
     public double getNewSalary(){
         return this.raiseSalary(this.salary);
     }
-
 
 
     public double payBonus() {

@@ -44,5 +44,11 @@ public class DatabaseAdminTest {
         assertEquals(200, databaseAdmin.payBonus(), 0.01);
     }
 
+    @Test
+    public void cannotChangeNameIfNull(){
+        databaseAdmin.setName(null);
+        assertEquals("Duncan", databaseAdmin.getName());
+    }
+
 }
 

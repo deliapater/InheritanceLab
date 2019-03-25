@@ -43,5 +43,11 @@ public class DeveloperTest {
         assertEquals(200, developer.payBonus(), 0.01);
     }
 
+    @Test
+    public void cannotChangeNameIfNull(){
+        developer.setName(null);
+        assertEquals("Cheche", developer.getName());
+    }
+
 }
 
